@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap-hw</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+    .dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+   
+ 
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg" class=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Browse
+          </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Web Development&raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Bootstrap</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">React</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Mobile App</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+                Design &raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Graphic Design</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Sketch</a>
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Landings
+          </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Landings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Home Academey</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="dropdown-item disabled" aria-disabled="true">Courses</a>
+          </li>
+        
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Courses&raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Course Single</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Course Resume</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+                Help Center&raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">FAQ's</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Guide</a>
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accounts
+          </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Instructor&raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Dashboard</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+                Students&raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Dashboard</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Subscription</a>
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+      </li>
+     
+      <div class="nav-item show dropdown">
+        <button role="button" aria-expanded="false" type="button" class="btn" data-bs-toggle="dropdown"> 
+            ...
+        </button>
+        <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="basic-nav-dropdown">
+            <a href="#" data-rr-ui-dropdown-item="" class="py-2 px-3 dropdown-item">
+                <div class="d-flex align-items-center"><i class="fe fe-file-text fs-3 text-primary"></i>
+                    <div class="ms-3 lh-3"><h5 class="mb-0">Documentations</h5>
+                        <p class="mb-0 fs-6">Browse the all documentation</p></div>
+                    </div></a><a href="#" data-rr-ui-dropdown-item="" class="py-2 px-3 dropdown-item"><div class="d-flex align-items-center">
+                        <i class="fe fe-layers fs-3 text-primary"></i><div class="ms-3 lh-3"><h5 class="mb-0">Changelog <span class="text-primary ms-1">v2.1.1</span></h5><p class="mb-0 fs-6">See what's new</p></div>
+                    </div>
+                </a>
+            </div>
+      </div>
+      <form class="d-flex align-items-center">
+        <input placeholder="Search Courses" type="Search" id="formSearch" class="ms-2 form-control" style="text-align: center;">
+        <span class="position-absolute ms-3 search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </form>
+        
+    </ul>
+    </div>
+    
+    <span class="ms-auto mt-1  " >
+        <a class="btn btn-white shadow-sm me-2 btn" href="#">
+            Sign In</a>
+            <a class="btn shadow-sm btn" href="#" style="background-color: #764DF6; color: white;">Sign Up</a></span>
+  </div>
+</nav>
+
+<main>
+    <section class="py-md-20 py-12 bg-white mt-5">
+        <div class="container"><div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="mb-4 mb-xl-0 text-center text-md-start">
+                    <h1 class="display-2 fw-bold mb-3  ls-sm ">Become a Vanilla JavaScript Developer </h1>
+                    <p class="mb-4 lead ">In this tutorial, we are going to learn about JavaScript (Vanilla JS) - for building incredible, powerful JavaScript applications.</p>
+                    <div class="mb-6 mb-0"><div class="list-unstyled fs-4 "><div class="mb-2 "><span class="me-2 "><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1 text-warning">
+                        <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+                        <span class="align-top">4 Hours</span></div><div class="mb-2 "><span class="me-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1 text-warning">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></span>
+                                <span class="align-top">12 Videos</span></div><div class="mb-2 ">
+                                    <span class="me-2 "><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1 text-warning">
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        </svg></span>
+                                        <span class="align-top">10,234+ Enrolled</span></div></div></div>
+                                        <a class="popup-youtube btn btn-success btn-lg fs-4" href="#">Watch Preview</a></div></div>
+                                        <div class="col-xl-5 col-lg-6 col-md-12 offset-xl-1"><div class="smooth-shadow-md card" style="z-index: 1;">
+                                            <div class="p-6 card-body"><div class="mb-4"><h1 class="mb-4 lh-1 fw-bold h2">Create Free Account</h1>
+                                                <div class="mt-3 mb-5 g-2 row"><div role="group" aria-label="socialButton" class="btn-group mb-2 mb-md-0 col-lg-4">
+                                                    <button type="button" class="shadow-sm btn btn-light"><svg viewBox="0 0 24 24" role="presentation" class="text-danger" style="width: 0.9rem; height: 0.9rem;">
+                                                    </svg> Google</button></div><div role="group" aria-label="socialButton" class="btn-group mb-2 mb-md-0 col-lg-4"><button type="button" class="shadow-sm btn btn-light"><svg viewBox="0 0 24 24" role="presentation" class="text-info" style="width: 0.9rem; height: 0.9rem;"> </svg> Twitter</button></div>
+                                                    <div role="group" aria-label="socialButton" class="btn-group col-lg-4"><button type="button" class="shadow-sm btn btn-light">
+                                                        <svg viewBox="0 0 24 24" role="presentation" class="text-primary" style="width: 0.9rem; height: 0.9rem;"></svg> Facebook</button></div></div></div><div class="mb-4"><div class="border-bottom"></div><div class="text-center mt-n2  lh-1"><span class="bg-white px-2 fs-6">OR</span></div></div><form class=""><div class="mb-3"><input placeholder="Email" type="email" id="email" class="form-control"></div><div class="mb-3"><input placeholder="Password" type="password" id="password" class="form-control"></div><div class="d-grid"><button type="submit" class="btn btn-primary">Start Courses for Free</button></div></form></div><div class="px-6 py-4 card-footer"><p class="mb-0">By continuing you accept the <a class="text-inherit fw-semi-bold" href="#">Terms of Use</a>,<a class="text-inherit fw-semi-bold" href="#"> Privacy Policy</a>, and <a class="text-inherit fw-semi-bold" href="#">Data Policy</a></p></div></div><div class="position-relative"><div class="position-absolute bottom-0 end-0 me-md-n3 mb-md-n6 me-lg-n4 mb-lg-n4 me-xl-n6 mb-xl-n8 d-none d-md-block "><img src="
+                                                            " alt="" class="opacity-25"></div></div></div></div></div>
+                </section>
+            <section class="py-4 shadow-sm position-relative bg-white "><div class="container"><div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2"><svg viewBox="0 0 24 24" role="presentation" class="text-dark-warning" style="width: 1.05rem; height: 1.05rem;"></svg></span><span class="align-middle">Shareable Certificate</span></div></div><div class="col-lg-3 col-md-6 col-sm-12"><div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2"><svg viewBox="0 0 24 24" role="presentation" class="text-dark-warning" style="width: 1.05rem; height: 1.05rem;"></svg></span><span class="align-middle">Flexible Deadlines</span></div></div><div class="col-lg-3 col-md-6 col-sm-12"><div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2"><svg viewBox="0 0 24 24" role="presentation" class="text-dark-warning" style="width: 1.05rem; height: 1.05rem;"></svg></span><span class="align-middle">100% Online Courses</span></div></div><div class="col-lg-3 col-md-6 col-sm-12"><div class="text-dark fw-semi-bold lh-1 fs-4 mb-3 mb-lg-0"><span class="icon-shape icon-xs rounded-circle bg-light-warning text-center me-2"><svg viewBox="0 0 24 24" role="presentation" class="text-dark-warning" style="width: 1.05rem; height: 1.05rem;"></svg></span><span class="align-middle">Approx.24 hours</span></div></div></div></div></section>
+            <section class="py-8 py-lg-18 bg-gray-200 "style="background-color:#E2E8F0">
+                <section class="py-8 py-lg-18 bg-gray-200 " style="background-color:#E2E8F0">
+                <div class="container"><div class="mb-10 justify-content-center row">
+                    <div class="text-center col-lg-8 col-md-12 col-sm-12">
+                        <span class=" mb-3 d-block text-uppercase fw-semi-bold ls-xl m-5"style="color:#764DF6;">Course Description</span>
+                        <h2 class="mb-2 display-4 fw-bold ">What will you learn?</h2><p class="lead">Vanilla JS is a fast, lightweight, cross-platformframework for building incredible, powerful JavaScript applications.</p></div></div><div class="row">
+                            <div class="col-lg-6 col-sm-12"><div class="mb-4 card"><div class="p-6 card-body">
+                                <div class="d-md-flex mb-4"><div class="mb-3 mb-md-0"><img src="https://geeks-react.netlify.app/static/media/feature-icon-1.d81a3fc1e4004c4b67e31168c1898c64.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle"></div><div class="ms-md-4"><h2 class="fw-bold mb-1">Introduction to JavaScript<span class="ms-2 badge bg-warning">Free</span></h2><p class="text-uppercase fs-6 fw-semi-bold mb-0"><span class="text-dark">Courses - 1</span> <span class="ms-3">6 Lessons</span> <span class="ms-3">1 HOUR 12 MIN</span></p></div></div><p class="mb-4 fs-4">In et tempus dui, in porta dolor. Donec molestie a purus ut interdum. Donec quis felis dignissim, luctus libero ornare</p><a role="button" tabindex="0" href="#" class="btn-link btn-link-primary"><u>View Chapter Details +</u></a></div></div></div><div class="col-lg-6 col-sm-12"><div class="mb-4 card"><div class="p-6 card-body"><div class="d-md-flex mb-4"><div class="mb-3 mb-md-0"><img src="https://geeks-react.netlify.app/static/media/feature-icon-2.35b3b77394deb3cd7ebf78b8464fab62.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle"></div><div class="ms-md-4"><h2 class="fw-bold mb-1">JavaScript Beginning<span class="ms-2 badge bg-warning"></span></h2><p class="text-uppercase fs-6 fw-semi-bold mb-0"><span class="text-dark">Courses - 2</span> <span class="ms-3">4 Lessons</span> <span class="ms-3">32 MIN</span></p></div></div><p class="mb-4 fs-4">Malesuada fames ac turpis egesta mpor tempus tincidunt. Aliquam congue lacus ac tellus consectetur malesuada.</p><a role="button" tabindex="0" href="#" class="btn-link btn-link-primary"><u>View Chapter Details +</u></a></div></div></div><div class="col-lg-6 col-sm-12"><div class="mb-4 card"><div class="p-6 card-body"><div class="d-md-flex mb-4"><div class="mb-3 mb-md-0"><img src="https://geeks-react.netlify.app/static/media/feature-icon-3.7cfb20a1964dfcd934da6b2267d68bc9.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle"></div><div class="ms-md-4"><h2 class="fw-bold mb-1">Variables and Constants<span class="ms-2 badge bg-warning"></span></h2><p class="text-uppercase fs-6 fw-semi-bold mb-0"><span class="text-dark">Courses - 3</span> <span class="ms-3">8 Lessons</span> <span class="ms-3">10 MIN</span></p></div></div><p class="mb-4 fs-4">Aliquam pulvinar eros a dictur vitae diam imperdiet, ornare turpis vequet elit nec, imperdiet lectuna liquam qs.</p><a role="button" tabindex="0" href="#" class="btn-link btn-link-primary"><u>View Chapter Details +</u></a></div></div></div><div class="col-lg-6 col-sm-12"><div class="mb-4 card"><div class="p-6 card-body"><div class="d-md-flex mb-4"><div class="mb-3 mb-md-0"><img src="https://geeks-react.netlify.app/static/media/feature-icon-4.4e54d5c3aeac9d9d151971629ba18abf.svg" alt="" class=" bg-primary icon-shape icon-xxl rounded-circle"></div><div class="ms-md-4"><h2 class="fw-bold mb-1">Types and Operators<span class="ms-2 badge bg-warning"></span></h2><p class="text-uppercase fs-6 fw-semi-bold mb-0"><span class="text-dark">Courses - 4</span> <span class="ms-3">10 Lessons</span> <span class="ms-3">32 MIN</span></p></div></div><p class="mb-4 fs-4">In lobortis quam eu augue spendisse imperdiet nec orci ipsum, tempus pharetra posuere imperdiet, lacinia a nisl.</p><a role="button" tabindex="0" href="#" class="btn-link btn-link-primary"><u>View Chapter Details +</u></a></div></div></div></div></div></section>
+
+
+
+             <section class="py-8 py-lg-18 bg-white "><div class="container ">
+                <div class="mb-6 align-items-center justify-content-center row">
+                    <div class="col-md-10"><div class="align-items-center  row">
+                        <div class="text-center text-lg-start order-1  col-xl-6 col-lg-7 col-md-12 col-sm-12">
+                            <span class="mb-3 d-block text-uppercase fw-semi-bold ls-xl m-5" style="color: #764DF6;">YOUR INSTRUCTOR</span><h2 class="mb-2 display-4 fw-bold mb-3">Hi, I’m <span style="color: #764DF6;">James Davies</span>,<br>I will be taking you through lessons.</h2>
+                            <p class="fs-3 pe-6">Create beautiful website with this Geeks UI template. Get started building a site today.</p><hr class="my-5"><div class="row">
+                                <div class="col-sm mb-3 mb-lg-0 col"><h2 class="h1 fw-bold mb-0 ls-xs">45</h2><p class="mb-0">Lessons</p></div><div class="col-sm mb-3 mb-lg-0 col-lg-5">
+                                    <h2 class="h1 fw-bold mb-0 ls-xs">10,500+</h2><p class="mb-0">Students</p>
+                                </div><div class="col-sm mb-3 mb-lg-0 col"><h2 class="h1 fw-bold mb-0 ls-xs">12+</h2><p class="mb-0">Learning Hours</p></div></div></div>
+                                <div class="mb-6 mb-lg-0 text-center  col-xl-5 col-lg-5 col-md-12 col-sm-12 offset-xl-1 order-lg-2"><img src="https://geeks-react.netlify.app/static/media/instructor-img.1ed9cc40ee4734876e12.png" alt="" class="img-fluid"></div></div></div></div></div>
+                            </section>
+
+
+                                <section class="bg-white py-lg-16 py-8 " >
+                                    <div class="container"style="padding-top: 100px;"><div class="mb-6 justify-content-center row"><div class="text-center col-lg-8 col-md-12 col-sm-12"><span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">Trusted by top-tier product companies</span></div></div><div class="row"><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-stripe.6b556d06bcc209f1c051bbdb399131f0.svg" alt="" class=""></div></div><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-airbnb.5908aac3e8062333869d580f4b2f3d59.svg" alt="" class=""></div></div><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-discord.2e0bae69d24feccf4efdd3f80746031b.svg" alt="" class=""></div></div><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-intercom.870602b99ded665ecf0c2d5b2ffeb8c4.svg" alt="" class=""></div></div><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-pinterest.928eaa29223a809cc5554847139d26a9.svg" alt="" class=""></div></div><div class="col-lg-2 col-md-4 col-sm-6 col-6"><div class="mb-4 text-center align-middle"><img src="https://geeks-react.netlify.app/static/media/gray-logo-netflix.a47db6eaf2de7327844f27eb230da39c.svg" alt="" class=""></div></div></div></div>
+                                </section>
+                                <section class="py-8 py-lg-18 m-5"style="background-color:#E2E8F0">
+                                    <div class="container"><div class="mb-10 justify-content-center row">
+                                        <div class="text-center col-lg-8 col-md-12 col-sm-12">
+                                            <span class="mb-3 d-block text-uppercase fw-semi-bold ls-xl"style="color: #764DF6;">Testimonials</span><h2 class="mb-2 display-4 fw-bold ">What our learners are saying</h2><p class="lead">12+ million people are already learning on Geeks</p></div></div><div class="row"><div class="col-md-6 col-sm-12"><div class="shadow-lg mb-4 card"><div class="p-4 p-md-8 text-center card-body"><i class="mdi mdi-48px mdi-format-quote-open text-light-info lh-1"></i><svg viewBox="0 0 24 24" role="presentation" class="text-light-primary lh-1" style="width: 3.3rem; height: 3.3rem;"></svg><p class="lead text-dark mt-3">The generated lorem Ipsum is therefore always free from repetition, injected humour, or words etc generate lorem Ipsum which looks racteristic reasonable.</p></div><div class="text-center border-top-0 card-footer"style="background-color: #764DF6;"><div class="mt-n8"><img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="rounded-circle border-primary avatar-xl border border-4"></div><div class="mt-2 text-white"><h3 class="text-white mb-0">Barry Watson</h3><p class="text-white-50 mb-1">Web Developer,UK</p></div></div></div></div><div class="col-md-6 col-sm-12"><div class="shadow-lg mb-4 card"><div class="p-4 p-md-8 text-center card-body"><i class="mdi mdi-48px mdi-format-quote-open text-light-info lh-1"></i><svg viewBox="0 0 24 24" role="presentation" class="text-light-info lh-1" style="width: 3.3rem; height: 3.3rem;"></svg><p class="lead text-dark mt-3">Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed vel felis imperdiet, lacinia metus malesuada diamamus rutrum turpis leo, id tincidunt magna sodales.</p></div><div class="bg-info text-center border-top-0 card-footer"><div class="mt-n8"><img src="https://geeks-react.netlify.app/static/media/avatar-2.397cdd4b772a83b9166e.jpg" alt="" class="rounded-circle border-info avatar-xl border border-4"></div><div class="mt-2 text-white"><h3 class="text-white mb-0">Linda Shenoy</h3><p class="text-white-50 mb-1">Developer and Bootcamp Instructor</p></div></div></div></div></div></div>
+                                </section>
+                                <section class="py-3 py-lg-6 bg-white t-5"><div class="container "><div class="mb-10 justify-content-center row "><div class="text-center col-lg-8 col-md-12 col-sm-12 m-5 "><span class="text-primary mb-3 d-block text-uppercase fw-semi-bold ls-xl">Need to Know</span><h2 class="mb-2 display-4 fw-bold ">Frequently Asked Questions.</h2>
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis non accumsan in, tempor dictum neque.</p></div></div>
+                                    <div class="justify-content-center row"><div class="col-lg-6 col-md-8 col-sm-12">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    What is the cost of an online course
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Create beautiful website with this Geeks UI template. Get started building a site today</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    What do I need to take a course?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    What do I receive for taking this course?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="mb-2 display-4 bg-white py-3 fs-4 px-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+                                    </div>
+                                    <div class="mt-10 text-center m-5"><a class="btn btn-outline-primary" href="#">More questions? Visit the Learner Help Center.</a></div>
+                                    </div>
+                                </section>
+                                <section class="py-lg-16 py-10 bg-gray" style="background: url(&quot;/static/media/course-graphics.171832eb5421ed89e4654944532c6886.svg&quot;) center top / cover no-repeat;"><div class="container"><div class="justify-content-center text-center row"><div class="col-md-9 col-sm-12"><h2 class="display-4"> Join more than 1 million learners worldwide</h2><p class="lead px-lg-12 mb-6">Effective learning starts with assessment. Learning a new skill is hard work—Signal makes it easier.</p><div class="d-grid d-md-block m-5"><a class="btn btn-primary mb-2 mb-md-0" style="background-color: #764DF6;" href="#">Start Learning for Free</a> <a class="btn btn-info" href="#">Geeks for Business</a></div></div></div></div>
+                                </section>
+</main>
+
+
+
+<footer class="pt-lg-10 pt-5 footer bg-white"><div class="container">
+    <div class="row"><div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="mb-4"><img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg" alt="" class="logo-inverse">
+            <div class="mt-4"><p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p></div></div>
+                <div class="fs-4 mt-4"><a class="mdi mdi-facebook text-muted me-2" href="#">
+                    <svg viewBox="0 0 24 24" role="presentation" style="width: 1.05rem; height: 1.05rem;">
+                    </svg></a><a class="mdi mdi-twitter text-muted me-2" href="#"><svg viewBox="0 0 24 24" role="presentation" style="width: 1.05rem; height: 1.05rem;">
+                    </svg></a>
+                    <a class="mdi mdi-instagram text-muted " href="#"><svg viewBox="0 0 24 24" role="presentation" style="width: 1.05rem; height: 1.05rem;"></svg></a></div></div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 offset-lg-1"><div class="mb-4"><h3 class="fw-bold mb-3">Company</h3>
+                        <ul class="nav nav-footer flex-column nav-x-0 list-unstyled">
+                            <li class=" "><a class="nav-link" href="#">About</a></li>
+                            <li class=" "><a class="nav-link" href="#">Pricing</a></li>
+                            <li class=" "><a class="nav-link" href="#">Blog</a></li>
+                            <li class=" "><a class="nav-link" href="#">Careers</a></li>
+                            <li class=" "><a class="nav-link" href="#">Contact</a></li>
+                        </ul></div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6"><div class="mb-4"><h3 class="fw-bold mb-3">Support</h3>
+                        <ul class="nav nav-footer flex-column nav-x-0 list-unstyled">
+                            <li class=" "><a class="nav-link" href="#">Help and Support</a></li>
+                            <li class=" "><a class="nav-link" href="#/">Become Instructor</a></li>
+                            <li class=" "><a class="nav-link" href="#">Get the app</a></li>
+                            <li class=" "><a class="nav-link" href="#">FAQ’s</a></li>
+                            <li class=" "><a class="nav-link" href="#">Tutorial</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6"><div class="mb-4"><h3 class="fw-bold mb-3">Get in touch</h3>
+                            <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                            <p class="mb-1">Email: <a href="#">support@geeksui.com</a></p>
+                            <p>Phone: <span class="text-dark fw-semi-bold">(000) 123 456 789</span></p>
+                            <div class="d-flex"><a href="#"><img src="https://geeks-react.netlify.app/static/media/appstore.b464860c93223b3fc15fc7d026bcdca0.svg" alt="" class="img-fluid"></a>
+                                <a class="ms-2" href="#"><img src="https://geeks-react.netlify.app/static/media/playstore.f23c3dcbde32e767203274d4b1749cc7.svg" alt="" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                   
+                </div>
+             </div> 
+                
+                
+                <div class="align-items-center g-0 border-top py-2 mt-6 row"><div class="col-lg-4 col-md-5 col-sm-12"><span>© 2023 Geeks-UI, Inc. All Rights Reserved</span></div>
+                <div class="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12"><nav class="nav nav-footer"><a class="nav-link ps-0" href="#">Privacy Policy</a>
+                    <a class="nav-link px-2 px-md-3" href="#">Cookie Notice </a><a class="nav-link d-none d-lg-block" href="#">Do Not Sell My Personal Information </a>
+                    <a class="nav-link" href="#">Terms of Use</a></nav>
+                </div>
+                </div>
+            
+        
+</footer>
+   
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/98ffe1ea84.js" crossorigin="anonymous"></script>
+</body>
+</html>
